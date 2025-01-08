@@ -11,11 +11,12 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            color: #333;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
             animation: slideIn 1s ease-out;
         }
@@ -69,18 +70,25 @@
         .service-item {
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
             width: 100%;
-            max-width: 300px;
+            max-width: 350px;
             transition: transform 0.3s ease-in-out;
+            text-align: center;
         }
         .service-item:hover {
             transform: scale(1.05);
         }
         .service-item h3 {
             color: #4CAF50;
-            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         .ads {
             margin-top: 30px;
@@ -103,12 +111,42 @@
         .icon {
             font-size: 48px;
             color: #4CAF50;
-            display: inline-block;
             margin: 10px;
             transition: transform 0.3s;
         }
         .icon:hover {
             transform: scale(1.2);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        .experience {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .experience h3 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience ul li {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -119,13 +157,14 @@
 
     <!-- Header with title -->
     <header>
-        <h1>Bienvenido a los Servicios de Licenciado en Informática</h1>
+        <h1>Bienvenido a los Servicios de Licenciado en Informática Sayron Vasquez</h1>
     </header>
 
     <!-- Navigation Menu -->
     <nav>
         <a href="#bienvenida">Bienvenida</a>
         <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -142,7 +181,7 @@
             <div class="service-list">
                 <div class="service-item">
                     <h3>Desarrollo de Software</h3>
-                    <p>Creación de aplicaciones personalizadas para satisfacer las necesidades específicas de tu empresa o proyecto.</p>
+                    <p>Creación de aplicaciones personalizadas para satisfacer las necesidades específicas de tu empresa o proyecto. Usando tecnologías como Node.js, Express y Laravel.</p>
                     <span class="icon">💻</span>
                 </div>
                 <div class="service-item">
@@ -152,7 +191,7 @@
                 </div>
                 <div class="service-item">
                     <h3>Diseño y Desarrollo Web</h3>
-                    <p>Desarrollo de sitios web responsivos y funcionales para mejorar la presencia digital de tu negocio.</p>
+                    <p>Desarrollo de sitios web responsivos y funcionales utilizando tecnologías modernas como React, Node.js y Laravel.</p>
                     <span class="icon">🌐</span>
                 </div>
                 <div class="service-item">
@@ -167,9 +206,22 @@
                 </div>
                 <div class="service-item">
                     <h3>Automatización de Procesos</h3>
-                    <p>Automatización de tareas repetitivas utilizando tecnologías de programación y sistemas inteligentes.</p>
+                    <p>Automatización de tareas repetitivas utilizando tecnologías de programación y sistemas inteligentes como Node.js y Express.</p>
                     <span class="icon">🤖</span>
                 </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experiencia">
+            <div class="experience">
+                <h3>Mi Experiencia</h3>
+                <ul>
+                    <li><strong>Flutter & React:</strong> Desarrollo de aplicaciones móviles y web con un enfoque en la experiencia de usuario y rendimiento.</li>
+                    <li><strong>Node.js Backend (Moleculer, Express):</strong> Desarrollo de APIs y servicios escalables y eficientes, con experiencia avanzada en arquitectura de microservicios.</li>
+                    <li><strong>Laravel & PHP:</strong> Creación de aplicaciones web dinámicas y robustas, con experiencia en el uso de Laravel para backend y PHP en proyectos de gran escala.</li>
+                    <li><strong>Consultoría IT:</strong> Asesoría a empresas sobre la optimización de infraestructuras tecnológicas, seguridad y automatización.</li>
+                </ul>
             </div>
         </section>
 
@@ -178,18 +230,12 @@
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687331975271225" crossorigin="anonymous"></script>
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9687331975271225" data-ad-slot="8506078969" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687331975271225" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9687331975271225" data-ad-slot="4256413584"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </section>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p style="text-align: center; padding: 20px; background-color: #333; color: white;">
-            © 2025 Licenciado en Informática Sayronv | Todos los derechos reservados.
-        </p>
+        <p>© 2025 Licenciado en Informática Sayron Vasquez | Todos los derechos reservados.</p>
     </footer>
 
 </body>
