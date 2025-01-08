@@ -3,128 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Licenciado en Informática Sayron Vasquez</title>
+    <title>Servicios de Informática Administrativa</title>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687331975271225"
+     crossorigin="anonymous"></script>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Estilos -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
-            color: #333;
         }
         header {
-            color: white;
-            padding: 20px 0;
+            background: #0078D7;
+            color: #fff;
             text-align: center;
-            animation: slideIn 1s ease-out, colorChange 5s infinite;
+            padding: 1rem;
         }
         nav {
-            background-color: #333;
-            overflow: hidden;
-            position: sticky;
-            top: 0;
-            z-index: 10;
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
         }
         nav a {
-            color: white;
-            padding: 14px 20px;
+            color: #fff;
             text-decoration: none;
-            float: left;
-            transition: background-color 0.3s;
+            margin: 0 15px;
         }
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            text-decoration: underline;
         }
-        .content {
-            padding: 20px;
-            animation: fadeIn 1s ease-out;
-        }
-        .ads {
-            margin-top: 30px;
-            padding: 20px;
+        section {
+            padding: 2rem;
             text-align: center;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        .ads h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            animation: colorChange 5s infinite;
+        h2 {
+            color: #0078D7;
+        }
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .service-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service-item h3 {
+            margin-top: 10px;
+        }
+        .service-item p {
+            color: #555;
         }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
+            background: #333;
+            color: #fff;
             text-align: center;
-        }
-        footer p {
-            margin: 0;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-    <!-- Google AdSense Script -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687331975271225"
-        crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- Animated Header -->
+    <!-- Header -->
     <header>
-        <h1>Bienvenido a los Servicios de Licenciado en Informática Sayron Vasquez</h1>
+        <h1>Servicios Profesionales en Informática Administrativa</h1>
     </header>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav>
-        <a href="#bienvenida">Bienvenida</a>
         <a href="#servicios">Servicios</a>
-        <a href="#anuncios">Anuncios</a>
         <a href="#contacto">Contacto</a>
+        <a href="#about">Acerca de</a>
     </nav>
 
-    <!-- Main content area -->
-    <div class="content">
-        <section id="bienvenida">
-            <h2>¡Hola y bienvenido!</h2>
-            <p>Como licenciado en informática, me complace ofrecer una variedad de servicios profesionales para ayudar a resolver problemas tecnológicos y optimizar procesos. A continuación, te presento los servicios que puedo brindarte:</p>
-        </section>
-
-        <!-- Services List -->
-        <section id="servicios">
-            <h2>Mis Servicios</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Desarrollo de Software</h3>
-                    <p>Creación de aplicaciones personalizadas para satisfacer las necesidades específicas de tu empresa o proyecto.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Consultoría en IT</h3>
-                    <p>Asesoría sobre cómo mejorar la infraestructura tecnológica y optimizar procesos.</p>
-                </div>
+    <!-- Services Section -->
+    <section id="servicios">
+        <h2>Mis Servicios</h2>
+        <div class="service-list">
+            <!-- Desarrollo de Software -->
+            <div class="service-item">
+                <i class="fas fa-laptop-code" style="font-size: 50px; color: #0078D7;"></i>
+                <h3>Desarrollo de Software</h3>
+                <p>Creación de aplicaciones personalizadas para resolver problemas empresariales y optimizar procesos administrativos.</p>
             </div>
-        </section>
+            <!-- Consultoría en IT -->
+            <div class="service-item">
+                <i class="fas fa-headset" style="font-size: 50px; color: #FF5733;"></i>
+                <h3>Consultoría en IT</h3>
+                <p>Asesoría estratégica sobre infraestructura tecnológica y mejoras en sistemas de información.</p>
+            </div>
+            <!-- Gestión de Base de Datos -->
+            <div class="service-item">
+                <i class="fas fa-database" style="font-size: 50px; color: #28A745;"></i>
+                <h3>Gestión de Base de Datos</h3>
+                <p>Diseño, implementación y mantenimiento de bases de datos seguras y optimizadas para la administración eficiente de datos.</p>
+            </div>
+            <!-- Auditoría de Sistemas -->
+            <div class="service-item">
+                <i class="fas fa-search" style="font-size: 50px; color: #FFC107;"></i>
+                <h3>Auditoría de Sistemas</h3>
+                <p>Evaluación y diagnóstico de sistemas informáticos para garantizar la seguridad y cumplimiento de estándares.</p>
+            </div>
+            <!-- Implementación de ERP -->
+            <div class="service-item">
+                <i class="fas fa-network-wired" style="font-size: 50px; color: #6F42C1;"></i>
+                <h3>Implementación de ERP</h3>
+                <p>Integración de sistemas de planificación de recursos empresariales (ERP) para automatizar procesos organizacionales.</p>
+            </div>
+            <!-- Mantenimiento de Hardware -->
+            <div class="service-item">
+                <i class="fas fa-tools" style="font-size: 50px; color: #DC3545;"></i>
+                <h3>Mantenimiento de Hardware</h3>
+                <p>Diagnóstico y reparación de equipos de cómputo para asegurar el correcto funcionamiento de la infraestructura tecnológica.</p>
+            </div>
+            <!-- Soporte Técnico -->
+            <div class="service-item">
+                <i class="fas fa-life-ring" style="font-size: 50px; color: #17A2B8;"></i>
+                <h3>Soporte Técnico</h3>
+                <p>Resolución de problemas técnicos y asistencia a usuarios para mantener la operatividad de los sistemas.</p>
+            </div>
+            <!-- Capacitación Tecnológica -->
+            <div class="service-item">
+                <i class="fas fa-chalkboard-teacher" style="font-size: 50px; color: #FF5733;"></i>
+                <h3>Capacitación Tecnológica</h3>
+                <p>Formación en herramientas tecnológicas y sistemas informáticos para el personal administrativo y técnico.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Ads Section -->
-        <section id="anuncios" class="ads">
-            <h2>Anuncios</h2>
-            <p>¡Descubre nuestras últimas promociones y ofertas especiales!</p>
-            <!-- Google AdSense Ad -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-9687331975271225"
-                data-ad-slot="1234567890"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>Acerca de mí</h2>
+        <p>Soy un Licenciado en Informática Administrativa con amplia experiencia en tecnologías de la información, gestión empresarial y desarrollo de software. Mi misión es ayudar a empresas y particulares a alcanzar su máximo potencial a través de soluciones tecnológicas.</p>
+    </section>
 
-    </div>
+    <!-- Contact Section -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si estás interesado en mis servicios o tienes alguna consulta, no dudes en contactarme:</p>
+        <p>Email: sayronvasquez@gmail.com</p>
+        <p>Teléfono: +504 95177521</p>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Servicios de Licenciado en Informática Sayron Vasquez</p>
+        <p>&copy; 2025 Todos los derechos reservados. Diseñado por [Tu Nombre].</p>
     </footer>
 </body>
 </html>
