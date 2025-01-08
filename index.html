@@ -14,11 +14,10 @@
             color: #333;
         }
         header {
-            background-color: #4CAF50;
             color: white;
             padding: 20px 0;
             text-align: center;
-            animation: slideIn 1s ease-out;
+            animation: slideIn 1s ease-out, colorChange 5s infinite;
         }
         @keyframes slideIn {
             from {
@@ -29,6 +28,14 @@
                 transform: translateY(0);
                 opacity: 1;
             }
+        }
+        @keyframes colorChange {
+            0% { background-color: blue; }
+            20% { background-color: skyblue; }
+            40% { background-color: green; }
+            60% { background-color: yellow; }
+            80% { background-color: orange; }
+            100% { background-color: red; }
         }
         nav {
             background-color: #333;
@@ -74,16 +81,16 @@
             padding: 25px;
             width: 100%;
             max-width: 350px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, background-color 5s infinite;
             text-align: center;
         }
         .service-item:hover {
             transform: scale(1.05);
         }
         .service-item h3 {
-            color: #4CAF50;
             font-size: 24px;
             margin-bottom: 10px;
+            animation: colorChange 5s infinite;
         }
         .service-item p {
             color: #555;
@@ -94,28 +101,12 @@
             margin-top: 30px;
             text-align: center;
         }
-        .animated-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://www.transparenttextures.com/patterns/robot-pattern.png');
-            animation: animateBackground 5s infinite linear;
-            z-index: -1;
-        }
-        @keyframes animateBackground {
-            0% {background-position: 0 0;}
-            100% {background-position: 100% 100%;}
-        }
         .icon {
             font-size: 48px;
             color: #4CAF50;
             margin: 10px;
             transition: transform 0.3s;
-        }
-        .icon:hover {
-            transform: scale(1.2);
+            animation: colorChange 5s infinite;
         }
         footer {
             background-color: #333;
@@ -134,9 +125,9 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         .experience h3 {
-            color: #4CAF50;
             text-align: center;
             margin-bottom: 15px;
+            animation: colorChange 5s infinite;
         }
         .experience ul {
             list-style-type: none;
@@ -149,7 +140,7 @@
             border-radius: 5px;
         }
 
-        /* Adding robot animation to a section */
+        /* Robot Animation */
         .robot {
             display: flex;
             justify-content: center;
@@ -157,7 +148,7 @@
         }
         .robot img {
             width: 150px;
-            animation: moveRobot 5s linear infinite;
+            animation: moveRobot 5s linear infinite, colorChange 5s infinite;
         }
         @keyframes moveRobot {
             0% { transform: translateX(0); }
@@ -168,10 +159,7 @@
 </head>
 <body>
 
-    <!-- Animated Background -->
-    <div class="animated-background"></div>
-
-    <!-- Header with title -->
+    <!-- Animated Header -->
     <header>
         <h1>Bienvenido a los Servicios de Licenciado en Informática Sayron Vasquez</h1>
     </header>
@@ -228,39 +216,15 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experiencia">
-            <div class="experience">
-                <h3>Mi Experiencia</h3>
-                <ul>
-                    <li><strong>Flutter & React:</strong> Desarrollo de aplicaciones móviles y web con un enfoque en la experiencia de usuario y rendimiento.</li>
-                    <li><strong>Node.js Backend (Moleculer, Express):</strong> Desarrollo de APIs y servicios escalables y eficientes, con experiencia avanzada en arquitectura de microservicios.</li>
-                    <li><strong>Laravel & PHP:</strong> Creación de aplicaciones web dinámicas y robustas, con experiencia en el uso de Laravel para backend y PHP en proyectos de gran escala.</li>
-                    <li><strong>Consultoría IT:</strong> Asesoría a empresas sobre la optimización de infraestructuras tecnológicas, seguridad y automatización.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Google Ads Section in Body -->
-        <section class="ads">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687331975271225" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9687331975271225" data-ad-slot="2439072461" data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </section>
-
-        <!-- Robot Animation Section -->
-        <section class="robot">
-            <img src="https://example.com/robot.png" alt="Robot Animation">
-        </section>
+        <!-- Robot Animation -->
+        <div class="robot">
+            <img src="https://www.transparenttextures.com/patterns/robot-pattern.png" alt="Robot animado">
+        </div>
 
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sayron Vasquez - Todos los derechos reservados.</p>
+        <p>&copy; 2025 Servicios de Licenciado en Informática Sayron Vasquez</p>
     </footer>
-
 </body>
 </html>
