@@ -67,19 +67,46 @@
                 opacity: 1;
             }
         }
-        .robot {
+        .service-list {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
             justify-content: center;
+        }
+        .service-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease-in-out, background-color 5s infinite;
+            text-align: center;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        .service-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: colorChange 5s infinite;
+        }
+        .service-item p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .ads {
             margin-top: 30px;
+            text-align: center;
         }
-        .robot img {
-            width: 200px;
-            animation: moveRobot 5s linear infinite, colorChange 5s infinite;
-        }
-        @keyframes moveRobot {
-            0% { transform: translateX(0); }
-            50% { transform: translateX(100px); }
-            100% { transform: translateX(0); }
+        .icon {
+            font-size: 48px;
+            color: #4CAF50;
+            margin: 10px;
+            transition: transform 0.3s;
+            animation: colorChange 5s infinite;
         }
         footer {
             background-color: #333;
@@ -89,6 +116,44 @@
         }
         footer p {
             margin: 0;
+        }
+        .experience {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .experience h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            animation: colorChange 5s infinite;
+        }
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience ul li {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Robot Animation */
+        .robot {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .robot img {
+            width: 150px;
+            animation: moveRobot 5s linear infinite, colorChange 5s infinite;
+        }
+        @keyframes moveRobot {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
         }
     </style>
 </head>
@@ -103,6 +168,7 @@
     <nav>
         <a href="#bienvenida">Bienvenida</a>
         <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -110,12 +176,49 @@
     <div class="content">
         <section id="bienvenida">
             <h2>¡Hola y bienvenido!</h2>
-            <p>Como licenciado en informática, me complace ofrecer una variedad de servicios profesionales para ayudar a resolver problemas tecnológicos y optimizar procesos.</p>
+            <p>Como licenciado en informática, me complace ofrecer una variedad de servicios profesionales para ayudar a resolver problemas tecnológicos y optimizar procesos. A continuación, te presento los servicios que puedo brindarte:</p>
+        </section>
+
+        <!-- Services List -->
+        <section id="servicios">
+            <h2>Mis Servicios</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Creación de aplicaciones personalizadas para satisfacer las necesidades específicas de tu empresa o proyecto. Usando tecnologías como Node.js, Express y Laravel.</p>
+                    <span class="icon">💻</span>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoría en IT</h3>
+                    <p>Asesoría sobre cómo mejorar la infraestructura tecnológica y optimizar procesos mediante el uso adecuado de la tecnología.</p>
+                    <span class="icon">📊</span>
+                </div>
+                <div class="service-item">
+                    <h3>Diseño y Desarrollo Web</h3>
+                    <p>Desarrollo de sitios web responsivos y funcionales utilizando tecnologías modernas como React, Node.js y Laravel.</p>
+                    <span class="icon">🌐</span>
+                </div>
+                <div class="service-item">
+                    <h3>Seguridad Informática</h3>
+                    <p>Implementación de medidas de seguridad para proteger tus sistemas y datos de posibles amenazas cibernéticas.</p>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="service-item">
+                    <h3>Soporte Técnico</h3>
+                    <p>Asistencia y solución de problemas técnicos relacionados con software, hardware y redes.</p>
+                    <span class="icon">🛠️</span>
+                </div>
+                <div class="service-item">
+                    <h3>Automatización de Procesos</h3>
+                    <p>Automatización de tareas repetitivas utilizando tecnologías de programación y sistemas inteligentes como Node.js y Express.</p>
+                    <span class="icon">🤖</span>
+                </div>
+            </div>
         </section>
 
         <!-- Robot Animation -->
         <div class="robot">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdEs--rKyJG1uAo3JkUnHjm68qvIG1jX1zXzRjiFggju4yiSeorFhPcws&s" alt="Robotino">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdEs--rKyJG1uAo3JkUnHjm68qvIG1jX1zXzRjiFggju4yiSeorFhPcws&s" alt="Robot animado">
         </div>
 
     </div>
